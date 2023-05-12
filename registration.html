@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utr-8" />
+    <title> registration</title>
+    <meta Name="viewport" content="width=device-d=width,initial-scale=1.0" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, rgb(137, 66, 184), #854a4a);
+            background-size: cover;
+        }
+
+        .logo a {
+            text-decoration: none;
+            font-size:40px;
+            width: 2em;
+            height: 2vh;
+            color: rgb(128, 13, 13);
+            text-shadow:2px 2px 2px block;
+            border-bottom:solid 1px;
+           
+        }
+        .container{
+            width: 100%;
+            max-width:650px;
+            background: rgba(0,0,0,0.5);
+            padding: 28px;
+            margin: 0 28px;
+            border-radius: 10px;
+            box-shadow: inset 2px 2px 2px white;
+        }
+        .registration{
+            font-size:26px;
+            font-weight:wrap;
+            text-align:center;
+            padding-bottom:6px;
+            color:white;
+            text-shadow:2px 2px 2px block;
+            border-bottom:solid 1px white;
+
+        }
+        .user-info{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content:space-between;
+            padding: 20px 0;
+
+        }
+        .input-box:nth-child(2n){
+            justify-content: end;
+        }
+        .input-box{
+            display:flex;
+            flex-wrap:wrap;
+            width:50%;
+            padding-bottom:15px;
+        }
+        .input-box input{
+            height:30px;
+            width:95%
+           
+            
+        }
+        .form-submit-btn{
+            margin-top: 40px;
+        }
+        .form-submit-btn input{
+            display:block;
+            width:100%;
+            margin-top:60px;
+            font-size:20px;
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <a href="landingpage2.html">CHARGE edu-tech</a>
+        </div>
+        <div class="registration">
+            <h1>registration</h1>
+        </div>
+        <form action="connect.php" method="post">
+            <div class="user-info">
+                <div class="input-box">
+                   First Name:
+                    <input type="text"name="FirstName">
+                    
+                </div>
+                <div class="input-box">
+                    last Name:
+                    <input type="text" name="lastname">
+                </div>
+                <div class="input-box">
+                    Mobile number :
+                    <input type="number" name="Mobilenumber">
+                </div>
+                <div class="input-box">
+                    email:
+                    <input type="text" name="email">
+                </div>
+                <div class="input-box">
+                    crete user Name:
+                    <input type="text" name="username">
+                </div>
+                <div class="input-box">
+                    crete password:
+                    <input type="password" name="password">
+                </div>
+                <div class="gender">
+                    gender:
+                    <input type="radio" name="gender" value="male">male
+                    <input type="radio" name="gender" value="female">female
+                    <input type="radio" name="gender" value="transgender">transgender
+                </div>
+                <div class="DOB">
+                    DOB :
+                    <input type="date"name= value='DOB'>
+                </div>
+                
+            </div>
+            <div class="form-submit-btn">
+                <input type="submit" name="registor" value="registor">
+            </div>
+        </form>
+    </div>
+</body>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>log in page</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, rgb(137, 66, 184), #965858);
+        }
+
+        .logo a {
+            text-decoration: none;
+            width: 2em;
+            height: 2vh;
+            color: rgb(128, 13, 13);
+            font-size: 35px;
+            font-style: initial;
+        }
+        .container{
+            width: 100%;
+            max-width:650px;
+            background: rgba(0,0,0,0.5);
+            padding: 28px;
+            margin: 0 28px;
+            border-radius: 10px;
+            box-shadow: inset 2px 2px 2px white;
+        }
+        .registration{
+            font-size:26px;
+            font-weight:wrap;
+            text-align:center;
+            padding-bottom:6px;
+            color:white;
+            text-shadow:2px 2px 2px block;
+            border-bottom:solid 1px white;
+
+        }
+        .user-info{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content:space-between;
+            padding: 20px 0;
+
+        }
+        .input-box:nth-child(2n){
+            justify-content: end;
+        }
+        .input-box{
+            display:flex;
+            flex-wrap:wrap;
+            width:50%;
+            padding-bottom:15px;
+        }
+        .input-box input{
+            height:30px;
+            width:95%
+           
+            
+        }
+        .form-submit-btn{
+            margin-top: 40px;
+        }
+        .form-submit-btn input{
+            display:block;
+            width:100%;
+            margin-top:60px;
+            font-size:20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="landingpage2.html">
+            <div class="logo">
+                <a href="landingpage2.html">CHARGE edu-tech</a>
+            </div>
+            <div class="user-info">
+               <div class="input-box">
+                User name:
+                <input type="text" name="username">
+            </div>
+            <br>
+            <div class="input-box">
+            User password:
+                <input type="password" name="password">
+            </div>
+            </div>
+            <div class="form-submit-btn">
+            <input type="submit" name="log in" value="login">
+            </div>
+
+
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>landing page 2</title>
+    <style type="text/css">
+        header {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), rgb(231, 231, 222);
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+
+
+        .logo a {
+            text-decoration: none;
+            width: 2em;
+            height: 2vh;
+            color: grey;
+            font-size: 35px;
+            font-style: initial;
+        }
+
+        .menu a {
+            text-decoration: none;
+            width: 3em;
+            height: 3vh;
+            padding: 10px 10px;
+            font-size: 20px;
+            font-style: normal;
+            color:darkgray;
+            position: relative;
+            
+
+        }
+        .login a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: indianred;
+            border-radius: 8px;
+            transition: 0.4s;
+
+        }
+
+        .text{
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            
+
+
+        }
+        .text h1{
+            max-width: 650p;
+            color: white;
+            font-size: 4em;
+
+        }
+        .text a {
+            text-decoration: none;
+            background: indianred;
+            color: white;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .text a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+        .login a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+
+        }
+        .menu a::before{
+            content: '';
+            position: absolute;
+            top:2em;
+            left: 0;
+            width: 0;
+            height: 1%;
+            background: indianred;
+            border-bottom:1px solid indianred;
+            border-top-left-radius: 1px solid indianred;
+            transition: 0.2s linear;
+        }
+        .menu a:hover:before{
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="landingpage2.html">CHARGE edu-tech</a>
+            </div>
+            <div class="menu">
+                <a href="#">internship</a>
+                <a href="#">summer traning</a>
+                <a href="landingpage.html">about us</a>
+                <a href="#">contact us</a>
+            </div>
+            <div class="login">
+                <a href="log in.html">log in</a>
+            </div>
+            <section class="text">
+                <h1>welcome To Charge edu-tech</h1>
+                <a href="registration.html">registration</a>
+            </section>
+
+        </nav>
+
+    </header>
+    <h1>About</h1>
+    <p>CHARGE Edu-Tech is the IT service and IT Consultancy company and this is a private limited company ownership by
+        two entrepreneurs located in chitradurga karnataka India. We providing a internship for computer science
+        students with different domains to upgrade the skills and knowledge.The aim of the Company is to get the more
+        number of interns and give the good credit to them and service to some companies.</p>
+
+</body>
+
+</html>
